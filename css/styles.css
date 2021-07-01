@@ -1,0 +1,30 @@
+/* Font and colors */
+
+
+
+/* General styling */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Delete this styling when other components are updated*/
+img {
+    width: 1000px;
+    height: auto;
+}
+
