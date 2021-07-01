@@ -1,11 +1,20 @@
 /* Font and colors */
 
-
+:root {
+    --light-green: #C5D5CB;
+    --dark-green: #9FA8A3;
+    --beige: #E3E0CF;
+    --brown: #C2B490;
+    --off-white: #F5F5F5;
+    --white: #FFFFFF;
+    --grey: #DCDCDC;
+}
 
 /* General styling */
 
 html {
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 *, *:before, *:after {
@@ -22,9 +31,127 @@ p {
     padding: 0;
 }
 
+.grid-container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "header"
+                        "main"
+                        "footer";
+}
+
 /* Delete this styling when other components are updated*/
 img {
-    width: 1000px;
+    width: 300px;
     height: auto;
 }
 
+/* Header and nav */
+header {
+    grid-area: header;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: var(--brown);
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links {
+    width: calc(1/5*100%);
+    text-align: center;
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+.nav-links:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+main {
+    grid-area: main;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: "banner" 
+                        "bio"
+                        "gallery"
+                        "events"
+                        "contact";
+    position: relative;
+    top: 2.5rem;
+}
+
+/* Banner */
+#banner {
+    grid-area: banner;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    background-image: url("/img/horizontal_light-banner-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--brown);
+}
+
+.banner-box {
+    width: auto;
+    height: 30%;
+    position: relative;
+    top: 38%;
+    left: 55%;
+}
+
+#banner h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    padding: 0 0 0.5rem 0;
+}
+
+#banner p {
+    margin: 0;
+    padding: 0 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+
+/* Bio */
+#bio {
+    grid-area: bio;
+}
+
+
+/* Gallery */
+#gallery {
+    grid-area: gallery;
+}
+
+
+/* Events */
+#events {
+    grid-area: events;
+}
+
+
+/* Contact */
+#contact {
+    grid-area: contact;
+}
+
+/* Footer */
+footer {
+    grid-area: footer;
+}
