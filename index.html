@@ -14,7 +14,6 @@
                     <p class="nav-links"><a href="#">Events</a></p>
                     <p class="nav-links"><a href="">Contact</a></p>
                 </nav>
-
             </header>
             <main>
                 <section class="container" id="banner">
@@ -24,9 +23,11 @@
                     </div>
                 </section>
                 <section class="container" id="bio">
-                    <h2 class="bio-caption">Welcome!</h2>
-                    <hr>
-                    <p>The Coffee Coterie is a community for those that enjoy coffee. Located in the greater Los Angeles area, we have access to numerous coffee shops and vendor that offer some of the very best coffee in the world. If you love coffee and enjoy sharing your love for it, this is the perfect community for you.</p>
+                    <div class="bio-box">
+                        <h2 class="bio-title">Welcome</h2>
+                        <hr>
+                        <p class="bio-caption">The Coffee Coterie is a community for those that enjoy coffee. Located in the greater Los Angeles area, we have access to numerous coffee shops and vendor that offer some of the very best coffee in the world. If you love coffee and enjoy sharing your love for it, this is the perfect community for you.</p>
+                    </div>
                 </section>
                 <section class="container" id="gallery">
                     <div class="gallery-container">
@@ -34,30 +35,34 @@
                         <img src="/img/vertical_coffe-with-friends.jpg" alt="Friends enjoying coffee together">
                         <img src="/img/veritcal_coffee-grounded-espresso.jpg" alt="Grounded coffee beans for espresso">
                     </div>
-                    <button type="button"><a href="#">See Gallery</a></button>
+                    <a href="#" id="gallery-link"><p>See Gallery</p></a>
                 </section>
                 <section class="container" id="events">
-                    <div class="events-container" id="hiking">
-                        <img src="/img/horizontal_coffee-outdoors.jpg" alt="hiking and coffee">
+                    <h2 classs="section-title" id="events-title">Upcoming Events</h2>
+                    <div class="events-img-container" id="hiking-img"></div>
+                    <div class="event-info" id="hiking-info">
                         <h2 class="events-caption" id="hiking-caption">Hiking and Coffee</h2>
                         <p class="events-desc" id="hiking-desc">Join our weekly hiking group and enjoy coffee with the community in the outdoors.</p>
-                        <button type="button"><a href="#">See details</a></button>
+                        <hr>
+                        <a href="#" class="event-details-link"><p class="events-sign-up">See details</p></a>
                     </div>
-                    <div class="events-container" id="beans">
-                        <img src="/img/horizontal_bean-sorting.jpg" alt="bean sorting">
+                    <div class="events-img-container" id="beans-img"></div>
+                    <div class="event-info" id="beans-info">
                         <h2 class="events-caption" id="hiking-caption">Sorting and Grading Beans</h2>
                         <p class="events-desc" id="beans-desc">Join our upcoming tour to learn about sorting and grading coffee beans.</p>
-                        <button type="button"><a href="#">Sign up</a></button>
+                        <hr>
+                        <a href="#" class="event-details-link"><p class="events-sign-up">Sign up</p></a>
                     </div>
-                    <div class="events-container" id="latte-art">
-                        <img src="/img/horizontal_latte-art.jpg" alt="latte art">
+                    <div class="events-img-container" id="latte-img"></div>
+                    <div class="event-info" id="latte-info">
                         <h2 class="events-caption" id="latte-caption">Latte Art</h2>
                         <p class="events-desc" id="beans-desc">Join our upcoming class to learn about the artistic stylings of latte art.</p>
-                        <button type="button"><a href="#">Sign up</a></button>
+                        <hr>
+                        <a href="#" class="event-details-link"><p class="events-sign-up">Sign up</p></a>
                     </div>
                 </section>
                 <section class="container" id="contact">
-                    <h2 class="contact-caption">Have any questions?</h2>
+                    <h2 class="contact-title">Have any questions?</h2>
                     <p class="contact-desc">Feel free to contact us here or reach us at any of the below social media platforms.</p>
                     <div class="socials-container">
                         <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -68,8 +73,12 @@
                 </section>
             </main>
             <footer>
-                <p id="copyright">&copy; The Coffee Coterie 2021</p>
-                <p id="location">Los Angeles, CA</p>
+                <div class="footer-left">
+                    <p id="copyright">&copy; The Coffee Coterie 2021</p>
+                </div>
+                <div class="footer-right">
+                    <p id="location">Los Angeles, CA</p>
+                </div>
             </footer>
         </div>
     </body>
