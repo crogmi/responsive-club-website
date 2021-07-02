@@ -53,6 +53,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 p {
@@ -107,6 +108,10 @@ nav {
     text-decoration: underline;
 }
 
+#mobile-nav {
+    display: none;
+}
+
 /* Main */
 main {
     grid-area: main;
@@ -126,7 +131,7 @@ main {
 #banner {
     grid-area: banner;
     width: 100%;
-    height: 60vh;
+    height: 60rem;
     display: flex;
     background-image: url("/img/horizontal_light-banner-background.jpg");
     background-position: center;
@@ -156,6 +161,19 @@ main {
     font-weight: bold;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+    #banner {
+        height: 13rem;
+        background-size: 0 0;
+        background-color: var(--white);
+        justify-content: center;
+        align-items: center;
+    }
+    .banner-box {
+        position: static;
+        text-align: center;
+    }
+}
 
 /* Bio */
 #bio {
@@ -171,6 +189,7 @@ main {
 }
 
 #bio h2 {
+    font-size: 1.5rem;
     margin-top: 0;
 }
 
@@ -206,6 +225,23 @@ main {
     color: black;
 }
 
+@media only screen and (max-width: 1024px) {
+    .gallery-container {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+    .gallery-container img {
+        width: calc(1/3*100%);
+        height: auto;
+    }
+    .gallery-container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 /* Events */
 #events {
     height: auto;
@@ -226,8 +262,9 @@ main {
     grid-area: events-title;
     padding: 1rem 0;
     width: 100%;
-    background-color: white;
     margin: 0;
+    background-color: white;
+    font-size: 1.5rem;
 }
 
 .events-desc {
@@ -289,6 +326,69 @@ main {
 
 #latte-info {
     grid-area: events-right-3;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+    #events {
+        grid-template-areas: "";
+        grid-template: 5rem repeat(3, 1fr) / repeat(1, 1fr);
+        background-color: transparent;
+    }
+    .events-caption {
+        font-size: 2rem;
+        padding-top: 5rem;
+     }
+    #events p {
+        font-size: 1.7rem;
+        overflow-wrap: break-word;
+    }
+    .events-sign-up {
+        color: var(--white);
+    }
+    #events hr {
+        border: 1px solid var(--white);
+        background-color: var(--white);
+    }
+    #events-title {
+        font-size: 2rem;
+        grid-area: auto;
+    }
+    #events .events-img-container {
+        display: none;
+    }
+    #hiking-info {
+        grid-area: auto;
+        height: 25rem;
+        width: 100%;
+        background-image: url("/img/horizontal_coffee-outdoors.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+        background-blend-mode: overlay;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: var(--white);
+    }
+    #beans-info {
+        grid-area: auto;
+        height: 25rem;
+        width: 100%;
+        background-image: url("/img/horizontal_bean-sorting.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+        background-blend-mode: overlay;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: var(--white);
+    }
+    #latte-info{
+        grid-area: auto;
+        height: 25rem;
+        width: 100%;
+        background-image: url("/img/horizontal_latte-art.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+        background-blend-mode: overlay;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: var(--white);
+    }
 }
 
 /* Contact */
