@@ -133,7 +133,7 @@ main {
     width: 100%;
     height: 60rem;
     display: flex;
-    background-image: url("./img/horizontal_light-banner-background.jpg");
+    background-image: url("../img/horizontal_light-banner-background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -290,7 +290,7 @@ main {
     grid-area: events-left-1;
     width: 100%;
     height: 30rem;
-    background-image: url("./img/horizontal_coffee-outdoors.jpg");
+    background-image: url("../img/horizontal_coffee-outdoors.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -304,7 +304,7 @@ main {
     grid-area: events-right-2;
     width: 100%;
     height: 30rem;
-    background-image: url("./img/horizontal_bean-sorting.jpg");
+    background-image: url("../img/horizontal_bean-sorting.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -318,7 +318,7 @@ main {
     grid-area: events-left-3;
     width: 100%;
     height: 30rem;
-    background-image: url("./img/horizontal_latte-art.jpg");
+    background-image: url("../img/horizontal_latte-art.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -360,7 +360,7 @@ main {
         grid-area: auto;
         height: 25rem;
         width: 100%;
-        background-image: url("./img/horizontal_coffee-outdoors.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+        background-image: url("../img/horizontal_coffee-outdoors.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
         background-blend-mode: overlay;
         background-size: cover;
         background-position: center;
@@ -371,7 +371,7 @@ main {
         grid-area: auto;
         height: 25rem;
         width: 100%;
-        background-image: url("./img/horizontal_bean-sorting.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+        background-image: url("../img/horizontal_bean-sorting.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
         background-blend-mode: overlay;
         background-size: cover;
         background-position: center;
@@ -382,7 +382,7 @@ main {
         grid-area: auto;
         height: 25rem;
         width: 100%;
-        background-image: url("./img/horizontal_latte-art.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+        background-image: url("../img/horizontal_latte-art.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
         background-blend-mode: overlay;
         background-size: cover;
         background-position: center;
